@@ -1,0 +1,131 @@
+html, body {
+        background-color: #70a9e6;
+        height: 99%;
+}
+
+div {
+        border-radius: 10px;
+}
+
+
+
+#loginbox {
+
+	background-color: #D6AD81;
+	width: 30%;
+	height: 70%;
+	margin-top: 10%;
+	margin-left: 35%;
+
+}
+
+
+
+#header {
+
+        width: 50%;
+        background-color: #70a9e6;
+        height: 10%;
+        
+}
+
+#title {
+
+        font-size: 40px;
+        font-family: Verdana;
+        color: black;
+        padding-top: 5px;
+        margin-top: 1%;
+        text-align: center;
+
+}
+
+#topbox {
+
+        float: left;
+        height: 32%;
+        width: 53%;
+        background-color: #9aaabc;
+        clear: both;
+        
+}
+
+#mapcanvas {
+
+        margin-top: 1%;
+        float: left;
+        width: 53%;
+        height: 56%;
+        clear: both;
+        
+}
+
+
+
+ul#tabs { 
+
+        list-style-type: none; 
+        margin: 30px 0 0 0; 
+        padding: 0 0 0.1em 0; 
+        width: 100%;
+        float: right;
+        margin-top: 0%;
+		 
+
+}
+
+ul#tabs li { 
+        display: inline; 
+        font-size: 30px;
+
+}
+
+ul#tabs li a { 
+        color: #000000; 
+        background-color: #CFA476; 
+        border: 1px solid #000000; 
+        border-bottom: none; 
+        padding: 0.3em; 
+        text-decoration: none; 
+}
+
+ul#tabs li a:hover { 
+        background-color: #CFA476;
+}
+
+ul#tabs li a.selected { 
+        color: #000000; 
+        background-color: #D6AD81; 
+        font-weight: bold; 
+        padding: 0.7em 0.3em 0.38em 0.3em;
+        z-index: 1; 
+}
+
+div.tabContent { 
+        border: 1px solid #000000; 
+        padding: 0.5em; 
+        background-color: #D6AD81;  
+        height: 99.5%;
+        width: 100%;
+        float: right;
+        margin-top: 0%;
+		overflow-y: auto;
+
+}
+
+div.tabContent.hide { 
+        display: none; 
+}
+
+#listings {
+
+margin-top: -19%;
+height: 88%;
+width: 45%;
+float: right;
+
+}
+
+form {
+display: inline; 
+}

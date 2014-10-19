@@ -1,0 +1,91 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="gogigs.css"/>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+	<title>
+		Welcome!
+	</title>
+
+	<style type="text/css">
+	span {font-family: arial;}
+	</style>
+
+	<script type="text/javascript">
+		function 
+		replaceLogInInfo (target,source) 
+		{	document.getElementById(target).innerHTML
+		= document.getElementById(source).innerHTML;}
+	</script>
+
+
+
+
+</head>
+<body>
+	
+	<div id="loginbox">
+
+		<center>
+
+			<h2>
+				<font size="7" 	>GoGigs!</font>
+			</h2>
+			<font size="3">
+	<div id="signup">
+				<span>
+					<p>Welcome to GoGigs, here you can find local events near you! If you're new, it only takes 30 seconds to sign up!</p>
+					<p>Or you can log in with Facebook or Twitter	!</p>
+				</span>
+				<form class="pure-form" action="register.php" method="post">
+					<fieldset class="pure-group">
+						<input type="email" class="pure-input-1-2" name="email" placeholder="Email" required />
+						<input type="text" class="pure-input-1-2" name="username" placeholder="Username" required />
+						<input type="password" class="pure-input-1-2" name="password" placeholder="Password" required />
+						
+						<button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Sign Up!</button>
+					</fieldset>
+				</form>
+				<span>
+					<p>Or</p>
+				</span>
+				<form class="pure-form">
+					<button type="submit" class="pure-button pure-input-1-2 pure-button-primary" onClick="replaceLogInInfo('signup', 'login')">Log In!</button>
+				</form>
+
+	</div>
+
+	<div id="testing" style="display:none">
+		<span id="login">
+
+
+<p>Enter your username and password below to find local events near you!</p>
+
+				<form class="pure-form" action="checklogin.php" method="post">
+					<fieldset class="pure-group">
+						<input type="text" class="pure-input-1-2" name="myusername" placeholder="Username" required>
+						<input type="password" class="pure-input-1-2" name="mypassword" placeholder="Password" required>
+						
+						<button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Log In!</button>
+					
+					<br>
+					
+
+				<p>Or you can just sign in with Facebook or Twitter below!</p> <br>
+				<button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Connect w/ Facebook</button>
+				<br>
+				<button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Connect w/ Twitter</button>
+				</fieldset>
+				</form>
+
+</span>
+	</div>
+
+
+			</font>
+		</center>
+	</div>
+
+
+
+</body>
+</html>
